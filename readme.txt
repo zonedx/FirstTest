@@ -13,3 +13,7 @@ git log --pretty=oneline
 git reset --hard head^ 退回上一个版本
 git reset --hard 3628164..(commit id)  退回未来版本
 git reflog  记录每一次命令
+git diff HEAD -- readme.txt  可查看工作去和版本库里面最新版本的区别
+git checkout -- readme.txt  把readme.txt文件在工作区的修改全部撤销（回到最近一次git commit 
+或git add时的状态）
+git reset HEAD file 把暂存区的修改撤销掉，重新放回工作区
