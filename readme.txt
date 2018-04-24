@@ -17,3 +17,5 @@ git diff HEAD -- readme.txt  可查看工作去和版本库里面最新版本的
 git checkout -- readme.txt  把readme.txt文件在工作区的修改全部撤销（回到最近一次git commit 
 或git add时的状态）
 git reset HEAD file 把暂存区的修改撤销掉，重新放回工作区
+
+git remote add origin git@github.com:[帐户名]/[仓库名].git  关联github远程库
