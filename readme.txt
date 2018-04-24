@@ -18,4 +18,8 @@ git checkout -- readme.txt  把readme.txt文件在工作区的修改全部撤销
 或git add时的状态）
 git reset HEAD file 把暂存区的修改撤销掉，重新放回工作区
 
+ssh-keygen -t rsa -C"youremail@example.com"  创建SSH key
 git remote add origin git@github.com:[帐户名]/[仓库名].git  关联github远程库
+如果创建远程仓库的时候 自动创建了README文件，那么推送的时候会报错  需要先合并：
+git pull --rebase origin master
+git push origin master  把当前分支master推送到远程
