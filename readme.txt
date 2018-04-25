@@ -23,3 +23,8 @@ git remote add origin git@github.com:[帐户名]/[仓库名].git  关联github�
 如果创建远程仓库的时候 自动创建了README文件，那么推送的时候会报错  需要先合并：
 git pull --rebase origin master
 git push origin master  把当前分支master推送到远程
+
+git checkout -b dev  创建并切换到dev分支
+==这两条命令（git branch dev  git checkout dev）
+git merge [branch name ]合并指定分支到当前分支
+git branch -d[name] 删除分支
