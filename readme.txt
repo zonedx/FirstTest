@@ -28,3 +28,7 @@ git checkout -b dev  创建并切换到dev分支
 ==这两条命令（git branch dev  git checkout dev）
 git merge [branch name ]合并指定分支到当前分支
 git branch -d[name] 删除分支
+git merge --no-ff -m "merge with no-ff"  普通合并模式
+git stash  把当前工作现场储存起来，等回复现场后继续工作
+git stash apply 恢复 但stash内容并不删除，需要使用 git stash drop来删除
+git stash pop  恢复的同时删除了stash内容
